@@ -1,0 +1,20 @@
+{
+  "name": "@fs-test/app-one",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/main.tsx --outdir=dist --bundle --sourcemap --format=esm --external:react --external:react-dom",
+    "start": "sirv -D -c -s -p 9691 & esbuild src/main.tsx --outdir=dist --bundle --sourcemap --format=esm --external:react --external:react-dom --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fs-test/add": "1.0.0",
+    "@fs-test/subtract": "1.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6"
+  }
+}

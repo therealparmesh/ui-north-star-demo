@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>@fs-test/app-spa</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
+  </head>
+  <body class="container">
+    <nav>
+      <ul>
+        <li>
+          <a href="/" onclick="window.$navigateToUrl(event)">home</a>
+        </li>
+        <li>
+          <a href="/one" onclick="window.$navigateToUrl(event)">one</a>
+        </li>
+        <li>
+          <a href="/two" onclick="window.$navigateToUrl(event)">two</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="root"></div>
+    <script
+      async
+      src="https://ga.jspm.io/npm:es-module-shims@1.5.17/dist/es-module-shims.js"
+    ></script>
+    <script type="esms-options">
+      {
+        "shimMode": true
+      }
+    </script>
+    <script type="importmap-shim">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.2.0",
+          "react-dom": "https://esm.sh/react-dom@18.2.0",
+          "react-dom/client": "https://esm.sh/react-dom@18.2.0/client"
+        }
+      }
+    </script>
+    <script
+      type="module-shim"
+      src="http://localhost:9999/dist/main.js"
+    ></script>
+  </body>
+</html>

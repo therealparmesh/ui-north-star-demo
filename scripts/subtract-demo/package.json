@@ -1,0 +1,14 @@
+{
+  "name": "@fs-test/subtract-demo",
+  "version": "0.0.1",
+  "type": "module",
+  "bin": {
+    "subtract-demo": "cli.js"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fs-test/subtract": "workspace:*"
+  }
+}

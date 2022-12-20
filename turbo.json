@@ -1,0 +1,16 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["symlink", "^symlink", "^build"],
+      "inputs": ["src"]
+    },
+    "symlink": {
+      "cache": false
+    },
+    "typecheck": {
+      "dependsOn": ["^typecheck"],
+      "inputs": ["src"]
+    }
+  }
+}

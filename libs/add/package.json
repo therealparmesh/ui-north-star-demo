@@ -1,0 +1,20 @@
+{
+  "name": "@fs-test/add",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepublish": "mkdist --declaration --ext=js",
+    "symlink": "lnfs --type dir src dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "lodash-es": "4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "4.17.6"
+  }
+}

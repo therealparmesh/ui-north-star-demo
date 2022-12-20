@@ -1,0 +1,57 @@
+{
+	"name": "@fs-test/subtract",
+	"versions": {
+		"1.0.0": {
+			"name": "@fs-test/subtract",
+			"version": "1.0.0",
+			"type": "module",
+			"main": "dist",
+			"files": [
+				"dist"
+			],
+			"dependencies": {
+				"lodash-es": "4.17.20"
+			},
+			"devDependencies": {
+				"@types/lodash-es": "4.17.6"
+			},
+			"scripts": {
+				"prepublish": "mkdist --declaration --ext=js",
+				"symlink": "lnfs --type dir src dist",
+				"typecheck": "tsc --noEmit"
+			},
+			"_id": "@fs-test/subtract@1.0.0",
+			"_integrity": "sha512-9e8bfQ2oB2Erk6KSN1aJFfTMDnZ9jWa1ELfTvGkrhruZegjrV9/Mt84jt2xXkDr4xkmTbI4jhULeMO5YJKrPSQ==",
+			"_resolved": "/private/var/folders/sy/3qgkmnsx383gr90hq0wp612r0000gq/T/bc79915847e6558db528b2332c539d77/fs-test-subtract-1.0.0.tgz",
+			"_from": "file:fs-test-subtract-1.0.0.tgz",
+			"_nodeVersion": "16.14.0",
+			"_npmVersion": "8.3.1",
+			"dist": {
+				"integrity": "sha512-9e8bfQ2oB2Erk6KSN1aJFfTMDnZ9jWa1ELfTvGkrhruZegjrV9/Mt84jt2xXkDr4xkmTbI4jhULeMO5YJKrPSQ==",
+				"shasum": "0e960dc0b5657f6d5e3ddb9867964915394c0a94",
+				"tarball": "http://localhost:4873/@fs-test/subtract/-/@fs-test/subtract-1.0.0.tgz"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-09-03T17:52:16.749Z",
+		"created": "2022-09-03T17:52:16.749Z",
+		"1.0.0": "2022-09-03T17:52:16.749Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "1.0.0"
+	},
+	"_uplinks": {},
+	"_distfiles": {},
+	"_attachments": {
+		"subtract-1.0.0.tgz": {
+			"shasum": "0e960dc0b5657f6d5e3ddb9867964915394c0a94",
+			"version": "1.0.0"
+		}
+	},
+	"_rev": "3-4bb3722c1bfa080e",
+	"_id": "@fs-test/subtract",
+	"readme": ""
+}

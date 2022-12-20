@@ -1,0 +1,12 @@
+{
+  "name": "@fs-test/app-spa",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/main.js --outdir=dist --bundle --sourcemap --format=esm",
+    "start": "sirv -D -c -s -p 9999 & esbuild src/main.js --outdir=dist --bundle --sourcemap --format=esm --watch"
+  },
+  "dependencies": {
+    "single-spa": "5.9.4"
+  }
+}
